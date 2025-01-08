@@ -9,6 +9,7 @@ puts 'Creating restaurants...'
 
 10.times do
   Restaurant.create(
+    # capitalize didn't work either
     name: "The #{Faker::Creature::Horse.name} #{Faker::Creature::Animal.name.capitalize}",
     address: Faker::Address.city,
     category: category.sample,
