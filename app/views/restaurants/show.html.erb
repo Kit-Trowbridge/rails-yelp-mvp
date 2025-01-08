@@ -1,0 +1,20 @@
+<h1>
+  <%= @restaurant.name %>
+</h1>
+
+<h3>Address</h3>
+<p>
+  <%= @restaurant.address %>
+</p>
+
+<h3>Category</h3>
+<p>
+  <%= @restaurant.category.capitalize %>
+</p>
+
+<% if @restaurant.phone_number %>
+  <h3>Phone Number</h3>
+  <p>
+    <%= @restaurant.phone_number %>
+  </p>
+<% end %>
