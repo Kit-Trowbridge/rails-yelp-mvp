@@ -19,4 +19,8 @@
   </p>
 <% end %>
 
+<%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
+
+<%= link_to 'View all reviews', restaurant_reviews_path(@restaurant) %>
+
 <%= link_to 'Return to all restaurants', restaurants_path %>
